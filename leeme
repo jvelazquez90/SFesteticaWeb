@@ -1,0 +1,46 @@
+SF ESTETICA WEB
+logo
+inicio
+tratamientos
+nosotros
+contacto
+
+tratamientos:
+foto con texto en el medio y link a tratamiento
+
+redes sociales
+donde estamos
+copyright
+
+----------------------
+header:
+	logo izquierda
+	menu derecha:
+		inicio
+		tratamientos
+		nosotros
+		donde estamos
+		contacto
+body:
+	section:
+		carousel de imagenes:
+			boton de imagen con telefono de contacto
+			boton con tratamientos
+	section:
+		tratamientos:
+			desplegable con foto y texto en modal y otra forma
+	section:
+		nosotros: profesional y titulos
+	section:
+		donde estamos: mapa
+	section:
+		contacto:
+			formulario
+			direccion
+			telefono
+			mail
+			redes sociales
+footer:
+copyright
+
+imagen whatapps en sticky para comunicacion en cualquier momento con integracion whatapps API

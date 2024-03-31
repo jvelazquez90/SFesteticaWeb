@@ -1,0 +1,138 @@
+body {
+    background-color: #BDE9CE;
+}
+
+* {
+    font-family: "Alkatra", cursive;
+    /*font-size: 18px;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    /*background-color: #BDE9CE;*/
+    display: inline-block;
+    width: 100%;
+    height: 140px;
+}
+
+.logo {
+    /*border-radius: 50%;*/
+    position: relative;
+    margin: 10px;
+    border-radius: 50%;
+    width: 200px;
+    left:40px;
+}
+
+
+.lista-contacto {
+    /*background-color: aquamarine;
+    border: 1px solid black;*/
+    position: relative;
+    left: 450px;
+    bottom: 210px;
+}
+
+.contacto-sticky {
+    display: inline-block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    left: 1200px;
+    top: 500px;
+}
+
+.barra_navegacion{
+    /*border: 1px solid black;*/
+    background-color: #BDE9CE;
+}
+
+.barra_navegacion li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    color: green;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.barra_navegacion_link {
+    /*border: 1px solid black;*/
+}
+
+
+.barra_navegacion_link a {
+    display: inline-block; /* para poder darle tamaño a los elementos */
+    height: 30px;
+    width: 150px;
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 320px;
+    bottom: 80px;
+    margin: 2px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.barra_navegacion li a:hover {
+    background-color: #95DBAF;
+    border-radius: 10px;
+}
+
+.imagen-lugar {
+    position: relative;
+    width: 99%;
+    height: 800px;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.eslogan {
+    position: relative;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    bottom: 700px;
+}
+
+.eslogan p:last-child {
+    font-size: 27px;
+}
+
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+*/
+ /*
+form {
+    background-color: #069646;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+}
+*/
