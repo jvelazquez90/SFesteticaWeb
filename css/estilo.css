@@ -39,8 +39,8 @@ header {
     position: fixed;
     width: 40px;
     height: 40px;
-    left: 1200px;
-    top: 500px;
+    left: 1280px;
+    top: 560px;
 }
 
 .barra_navegacion{
@@ -100,6 +100,9 @@ header {
 .eslogan p:last-child {
     font-size: 27px;
 }
+
+/*----------------------------------------------------------------------------------------------------*/
+
 
 /*
 ul {
