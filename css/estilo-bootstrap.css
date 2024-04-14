@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Alkatra";
+    src: url("../font/Alkatra-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    background-color: #BDE9CE;
+}
+
+.navbar-verde {
+    background-color: #BDE9CE;
+}
+
+* {
+    font-family: "Alkatra", cursive;
+    /*font-size: 18px;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.font-bordeado {
+    text-shadow: 1px 1px black;
+}
