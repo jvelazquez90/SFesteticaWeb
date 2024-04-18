@@ -44,13 +44,13 @@
                 <a class="nav-link" href="#tratamientos"> Tratamientos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Nosotros </a>
+                <a class="nav-link" href="#nosotros"> Nosotros </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#ubicacion"> Donde estamos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Contacto </a>
+                <a class="nav-link" href="#contacto"> Contacto </a>
               </li>
             </ul>
           </div>
@@ -164,6 +164,7 @@
       </div>
     </div>
 
+    <!----------------------------------DONDE ESTAMOS ------------------------------------------------->
     <section>
       <div class="container">
         <div class="row mb-3">
@@ -176,6 +177,91 @@
         </article>
       </div>
     </section>
+
+    <!----------------------------------CONTACTO ------------------------------------------------->
+    <section>
+      <div class="container mt-3">
+        <div class="row m-1">
+          <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <h2 id="contacto">CONTACTO</h2>
+          </div>
+          <form action="mailto:javf_90@hotmail.com" method="POST" enctype="text/plain">
+            <div class="row">
+              <div class="col">
+                <label for="telefono">Nombre:</label> 
+                <input type="text" class="form-control" name="contactoNombre">
+
+                <label for="telefono">Apellido:</label> 
+                <input type="text" class="form-control" name="contactoApellido">
+
+                <label for="telefono">Teléfono:</label> 
+                <input type="text" class="form-control" name="telefono" id="telefono"><br>
+            
+                <div class="col">
+                  <label for="mensaje">Mensaje:</label> 
+                  <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
+                </div>
+
+                <button class="btn btn-secondary"> Enviar </button>
+              </div>
+              <div class="col mt-5">
+                <div class="container">
+                  <div class="row text-center mb-5">
+                    <div class="col-3">
+                      <img src="./img/redes-sociales/phone.png" width="20" height="20">
+                    </div>
+                    <div class="col-9">
+                      +54 9 1164905608
+                    </div>
+                  </div>
+                  <div class="row text-center mb-5">
+                    <div class="col-3">
+                      <img src="./img/redes-sociales/marcador-de-posicion.png" width="20" height="20">
+                    </div>
+                    <div class="col-9">
+                      Av. Croacia 1253, José C. Paz
+                    </div>
+                  </div>
+                  <div class="row text-center mb-5">
+                    <div class="col-3">
+                      <img src="img/redes-sociales/gmail.png" width="25" height="25">
+                    </div>
+                    <div class="col-9">
+                      silviafernandez.forty@gmail.com 
+                    </div>
+                  </div>
+                  <div class="row text-center mb-5">
+                    <div class="col-3">
+                      <a href="https://www.facebook.com/sf.estetica.1" target="_blank"> 
+                        <img src="img/redes-sociales/facebook.png" width="25" height="25">
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      SF Estética
+                    </div>
+                  </div>
+                  <div class="row text-center mb-5">
+                    <div class="col-3">
+                      <a href="https://www.instagram.com/sfestetica?igsh=MWRmd2tjejkyZmxiaA==" target="_blank"> 
+                        <img src="img/redes-sociales/instagram.png" width="25" height="25">
+                      </a> 
+                    </div>
+                    <div class="col-9">
+                      SF Estética
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- datos ocultos para el usuario que son para el servidor -->
+            <input type=hidden name="fuente" value="web">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------- FOOTER ------------------------------------------------->
     
 </body>
 </html>
