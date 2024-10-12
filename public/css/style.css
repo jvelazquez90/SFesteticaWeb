@@ -1,16 +1,18 @@
-body{
-    background-color: darkslategray;
-}
-
-h1{
+.imagen-fondo {
+    background-image: url('../img/sfestetica-lugar2.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-size: cover;
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 5px red;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    */
 }
 
-.flexbox {
-    align-items: center;
-    display: flex;
-    height: 100px;
-    justify-content: center;
+h1 {
+    
 }
