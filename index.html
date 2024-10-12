@@ -180,33 +180,42 @@
 
     <!----------------------------------CONTACTO ------------------------------------------------->
     <section>
-      <div class="container mt-3">
+      <div class="containers mt-3">
         <div class="row m-1">
           <div class="col-md-8 col-xl-6 text-center mx-auto">
             <h2 id="contacto">CONTACTO</h2>
           </div>
-          <form action="mailto:javf_90@hotmail.com" method="POST" enctype="text/plain">
-            <div class="row">
-              <div class="col">
-                <label for="telefono">Nombre:</label> 
-                <input type="text" class="form-control" name="contactoNombre">
-
-                <label for="telefono">Apellido:</label> 
-                <input type="text" class="form-control" name="contactoApellido">
-
-                <label for="telefono">Teléfono:</label> 
-                <input type="text" class="form-control" name="telefono" id="telefono"><br>
-            
-                <div class="col">
-                  <label for="mensaje">Mensaje:</label> 
-                  <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
+          <div class="row">
+            <div class="col-sm-6">
+              <form action="mailto:javf_90@hotmail.com" method="POST" enctype="text/plain">
+                <div class="row">
+                  <div class="col">
+                    <label for="telefono">Nombre:</label> 
+                    <input type="text" class="form-control" name="contactoNombre">
+      
+                    <label for="telefono">Apellido:</label> 
+                    <input type="text" class="form-control" name="contactoApellido">
+      
+                    <label for="telefono">Teléfono:</label> 
+                    <input type="text" class="form-control" name="telefono" id="telefono"><br>
+                
+                    <div class="col">
+                      <label for="mensaje">Mensaje:</label> 
+                      <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
+                    </div>
+      
+                    <button class="btn btn-secondary"> Enviar </button>
+                  </div>
                 </div>
-
-                <button class="btn btn-secondary"> Enviar </button>
-              </div>
+        
+                <!-- datos ocultos para el usuario que son para el servidor -->
+                <input type=hidden name="fuente" value="web">
+              </form>
+            </div>
+            <div class="col-sm-6">
               <div class="col mt-5">
                 <div class="container">
-                  <div class="row text-center mb-5">
+                  <div class="row text-center mb-3">
                     <div class="col-3">
                       <img src="./img/redes-sociales/phone.png" width="20" height="20">
                     </div>
@@ -214,7 +223,7 @@
                       +54 9 1164905608
                     </div>
                   </div>
-                  <div class="row text-center mb-5">
+                  <div class="row text-center mb-3">
                     <div class="col-3">
                       <img src="./img/redes-sociales/marcador-de-posicion.png" width="20" height="20">
                     </div>
@@ -222,7 +231,7 @@
                       Av. Croacia 1253, José C. Paz
                     </div>
                   </div>
-                  <div class="row text-center mb-5">
+                  <div class="row text-center mb-3">
                     <div class="col-3">
                       <img src="img/redes-sociales/gmail.png" width="25" height="25">
                     </div>
@@ -230,7 +239,7 @@
                       silviafernandez.forty@gmail.com 
                     </div>
                   </div>
-                  <div class="row text-center mb-5">
+                  <div class="row text-center mb-3">
                     <div class="col-3">
                       <a href="https://www.facebook.com/sf.estetica.1" target="_blank"> 
                         <img src="img/redes-sociales/facebook.png" width="25" height="25">
@@ -240,7 +249,7 @@
                       SF Estética
                     </div>
                   </div>
-                  <div class="row text-center mb-5">
+                  <div class="row text-center mb-3">
                     <div class="col-3">
                       <a href="https://www.instagram.com/sfestetica?igsh=MWRmd2tjejkyZmxiaA==" target="_blank"> 
                         <img src="img/redes-sociales/instagram.png" width="25" height="25">
@@ -253,15 +262,29 @@
                 </div>
               </div>
             </div>
-    
-            <!-- datos ocultos para el usuario que son para el servidor -->
-            <input type=hidden name="fuente" value="web">
-          </form>
+          </div>
         </div>
       </div>
     </section>
 
     <!---------------------------------- FOOTER ------------------------------------------------->
+    <div class="container border-bottom border-light">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 SF Estética</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end footer-color">
+          <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Tratamientos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Nosotros</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Ubicación</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Contacto</a></li>
+        </ul>
+      </footer>
+    </div>
     
 </body>
 </html>
