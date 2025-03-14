@@ -21,3 +21,12 @@ body {
 .font-bordeado {
     text-shadow: 1px 1px black;
 }
+
+.verde {
+    background-color: #7BD29C;
+}
+
+.verde-gradiente {
+    background-color: #BDE9CE; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#BDE9CE, #7BD29C);
+}

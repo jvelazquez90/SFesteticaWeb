@@ -186,7 +186,7 @@
             <h2 id="contacto">CONTACTO</h2>
           </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb-2 verde rounded-2">
               <form action="mailto:javf_90@hotmail.com" method="POST" enctype="text/plain">
                 <div class="row">
                   <div class="col position-relative">
@@ -197,13 +197,15 @@
                     <input type="text" class="form-control" name="contactoApellido">
       
                     <label for="telefono">Teléfono:</label> 
-                    <input type="text" class="form-control" name="telefono" id="telefono"><br>
+                    <input type="number" class="form-control" name="telefono" id="telefono"><br>
                 
                     <div class="col">
                       <label for="mensaje">Mensaje:</label> 
                       <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
                     </div>
-                    <button class="btn btn-secondary position-absolute end-0"> Enviar </button>
+                    <div class="text-end m-1">
+                      <button class="btn btn-secondary"> Enviar </button>
+                    </div>
                   </div>
                 </div>
         
@@ -267,7 +269,7 @@
     </section>
 
     <!---------------------------------- FOOTER ------------------------------------------------->
-    <div class="container border-bottom border-light">
+    <div class="container mt-5 border-bottom border-light shadow p-3 mb-2 verde-gradiente rounded">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 SF Estética</p>
     
