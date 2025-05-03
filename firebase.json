@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sfestetica-2e340",
     "public": "public",
     "ignore": [
       "firebase.json",

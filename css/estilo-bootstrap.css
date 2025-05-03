@@ -3,6 +3,15 @@
     src: url("../font/Alkatra-VariableFont_wght.ttf") format("truetype");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/*
+section[id] {
+    scroll-margin-top: 90px !important;
+}
+    */
+
 body {
     background-color: #BDE9CE;
 }
@@ -29,4 +38,8 @@ body {
 .verde-gradiente {
     background-color: #BDE9CE; /* For browsers that do not support gradients */
     background-image: linear-gradient(#BDE9CE, #7BD29C);
+}
+
+.margen-navbar {
+    padding-top: 90px;
 }

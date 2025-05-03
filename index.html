@@ -21,39 +21,39 @@
 </head>
 <body class="navbar-verde">
   <!------------------------------------ NAVBAR----------------------------------------------------------------------->
-  <nav class="navbar navbar-expand-lg navbar-verde sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-verde sticky-top opacity-75">
     <div class="container">
-        <div>
-            <a href="#"> <img src="./img/logo.png" alt="sfestetica-logo" width="100" height="60"></a>
-        </div>
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapsibleNavbar">
-            <span 
-              class="navbar-toggler-icon">
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#inicio"> Inicio </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tratamientos"> Tratamientos </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros"> Nosotros </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#ubicacion"> Donde estamos </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto"> Contacto </a>
-              </li>
-            </ul>
-          </div>
+      <div>
+        <a href="#" id="Inicio"> <img src="./img/logo.png" alt="sfestetica-logo" width="100" height="60"></a>
+      </div>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#collapsibleNavbar">
+        <span 
+          class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio"> Inicio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tratamientos"> Tratamientos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros"> Nosotros </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion"> Donde estamos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto"> Contacto </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -98,6 +98,7 @@
   </div>
 
   <!----------------------------------TRATAMIENTOS------------------------------------------------->
+  <section id="seccion-tratamientos">
     <div class="container py-4 py-xl-5">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
@@ -245,99 +246,101 @@
         </div>
       </div>
     </div>
+  </section>
 
     <!----------------------------------DONDE ESTAMOS ------------------------------------------------->
-    <section>
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2 id="ubicacion">DONDE ESTAMOS</h2>
-          </div>
+  <section class="mt-5" id="seccion-ubicacion">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <h2 id="ubicacion">DONDE ESTAMOS</h2>
         </div>
-        <article>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.240769494785!2d-58.79014022493333!3d-34.52212747298372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc99cdc783d6ed%3A0xd339e28ba69787f9!2sSF%20Est%C3%A9tica!5e0!3m2!1ses-419!2sar!4v1696361549772!5m2!1ses-419!2sar" width="98%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
       </div>
-    </section>
+      <article>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.240769494785!2d-58.79014022493333!3d-34.52212747298372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc99cdc783d6ed%3A0xd339e28ba69787f9!2sSF%20Est%C3%A9tica!5e0!3m2!1ses-419!2sar!4v1696361549772!5m2!1ses-419!2sar" width="98%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </article>
+    </div>
+  </section>
 
     <!----------------------------------CONTACTO ------------------------------------------------->
-    <section>
-      <div class="containers mt-3">
-        <div class="row m-1">
-          <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2 id="contacto">CONTACTO</h2>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 mb-2 verde rounded-2">
-              <form action="https://formsubmit.co/8ca0556beee57727287088b60d5218c0" method="POST">
-                <div class="row">
-                  <div class="col position-relative">
-                    <label for="telefono">Nombre y Apellido:</label> 
-                    <input type="text" class="form-control" id="contactoNombre" name="contactoNombre">
-      
-                    <label for="Email">Email:</label> 
-                    <input type="text" class="form-control" id="email" name="email"><br>
-                
-                    <div class="col">
-                      <label for="mensaje">Mensaje:</label> 
-                      <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
-                    </div>
-                    <div class="text-end m-1">
-                      <button class="btn btn-secondary"> Enviar </button>
-                    </div>
+  <section class="mt-5" id="seccion-contacto">
+    <div class="containers mt-3">
+      <div class="row m-1">
+        <div class="col-md-8 col-xl-6 text-center mx-auto">
+          <h2 id="contacto">CONTACTO</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 mb-2 verde rounded-2">
+            <form action="https://formsubmit.co/8ca0556beee57727287088b60d5218c0" method="POST">
+              <div class="row">
+                <div class="col position-relative">
+                  <label for="telefono">Nombre y Apellido:</label> 
+                  <input type="text" class="form-control" id="contactoNombre" name="contactoNombre">
+    
+                  <label for="Email">Email:</label> 
+                  <input type="text" class="form-control" id="email" name="email"><br>
+              
+                  <div class="col">
+                    <label for="mensaje">Mensaje:</label> 
+                    <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
+                  </div>
+                  <div class="text-end m-1">
+                    <button class="btn btn-secondary"> Enviar </button>
                   </div>
                 </div>
-        
-                <!-- datos ocultos para el usuario que son para el servidor -->
-                <input type=hidden name="fuente" value="web">
-              </form>
-            </div>
-            <div class="col-sm-6">
-              <div class="col mt-5">
-                <div class="container">
-                  <div class="row mb-3">
-                    <div class="col-3 text-center ">
-                      <img src="./img/redes-sociales/phone.png" width="20" height="20">
-                    </div>
-                    <div class="col-9">
-                      +54 9 1164905608
-                    </div>
+              </div>
+      
+              <!-- datos ocultos para el usuario que son para el servidor -->
+              <input type=hidden name="fuente" value="web">
+            </form>
+          </div>
+          <div class="col-sm-6">
+            <div class="col mt-5">
+              <div class="container">
+                <div class="row mb-3">
+                  <div class="col-3 text-center ">
+                    <img src="./img/redes-sociales/phone.png" width="20" height="20">
                   </div>
-                  <div class="row mb-3">
-                    <div class="col-3 text-center">
-                      <img src="./img/redes-sociales/marcador-de-posicion.png" width="20" height="20">
-                    </div>
-                    <div class="col-9">
-                      Av. Croacia 1253, José C. Paz
-                    </div>
+                  <div class="col-9">
+                    +54 9 1164905608
                   </div>
-                  <div class="row mb-3">
-                    <div class="col-3 text-center">
-                      <img src="img/redes-sociales/gmail.png" width="25" height="25">
-                    </div>
-                    <div class="col-9">
-                      silviafernandez.forty@gmail.com 
-                    </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-3 text-center">
+                    <img src="./img/redes-sociales/marcador-de-posicion.png" width="20" height="20">
                   </div>
-                  <div class="row mb-3">
-                    <div class="col-3 text-center">
-                      <a href="https://www.facebook.com/sf.estetica.1" target="_blank"> 
-                        <img src="img/redes-sociales/facebook.png" width="25" height="25">
-                      </a>
-                    </div>
-                    <div class="col-9">
-                      SF Estética
-                    </div>
+                  <div class="col-9">
+                    Av. Croacia 1253, José C. Paz
                   </div>
-                  <div class="row mb-3">
-                    <div class="col-3 text-center">
-                      <a href="https://www.instagram.com/sfestetica?igsh=MWRmd2tjejkyZmxiaA==" target="_blank"> 
-                        <img src="img/redes-sociales/instagram.png" width="25" height="25">
-                      </a> 
-                    </div>
-                    <div class="col-9">
-                      SF Estética
-                    </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-3 text-center">
+                    <img src="img/redes-sociales/gmail.png" width="25" height="25">
+                  </div>
+                  <div class="col-9">
+                    silviafernandez.forty@gmail.com 
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-3 text-center">
+                    <a href="https://www.facebook.com/sf.estetica.1" target="_blank"> 
+                      <img src="img/redes-sociales/facebook.png" width="25" height="25">
+                    </a>
+                  </div>
+                  <div class="col-9">
+                    SF Estética
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-3 text-center">
+                    <a href="https://www.instagram.com/sfestetica?igsh=MWRmd2tjejkyZmxiaA==" target="_blank"> 
+                      <img src="img/redes-sociales/instagram.png" width="25" height="25">
+                    </a> 
+                  </div>
+                  <div class="col-9">
+                    SF Estética
                   </div>
                 </div>
               </div>
@@ -345,26 +348,26 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!---------------------------------- FOOTER ------------------------------------------------->
-    <div class="container mt-5 border-bottom border-light shadow p-3 mb-2 verde-gradiente rounded">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2025 SF Estética</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end footer-color">
-          <li class="nav-item"><a href="#inicio" class="nav-link px-1 text-body-secondary">Inicio</a></li>
-          <li class="nav-item"><a href="#tratamientos" class="nav-link px-1 text-body-secondary">Tratamientos</a></li>
-          <li class="nav-item"><a href="#nosotros" class="nav-link px-1 text-body-secondary">Nosotros</a></li>
-          <li class="nav-item"><a href="#ubicacion" class="nav-link px-1 text-body-secondary">Ubicación</a></li>
-          <li class="nav-item"><a href="#contacto" class="nav-link px-1 text-body-secondary">Contacto</a></li>
-        </ul>
-      </footer>
-    </div>
-    
+  <div class="container mt-5 border-bottom border-light shadow p-3 mb-2 verde-gradiente rounded">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2025 SF Estética</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end footer-color">
+        <li class="nav-item"><a href="#inicio" class="nav-link px-1 text-body-secondary">Inicio</a></li>
+        <li class="nav-item"><a href="#tratamientos" class="nav-link px-1 text-body-secondary">Tratamientos</a></li>
+        <li class="nav-item"><a href="#nosotros" class="nav-link px-1 text-body-secondary">Nosotros</a></li>
+        <li class="nav-item"><a href="#ubicacion" class="nav-link px-1 text-body-secondary">Ubicación</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link px-1 text-body-secondary">Contacto</a></li>
+      </ul>
+    </footer>
+  </div>
 </body>
 </html>
