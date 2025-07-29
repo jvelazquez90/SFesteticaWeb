@@ -18,10 +18,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
       crossorigin="anonymous">
     </script>
+
+    <!-- EmailJS-->
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('HizZ3E_2vQqpPSJHs')
+    </script>
 </head>
-<body class="navbar-verde">
+<body class="navbar-verde margen-superior" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
   <!------------------------------------ NAVBAR----------------------------------------------------------------------->
-  <nav class="navbar navbar-expand-lg navbar-verde sticky-top opacity-75">
+  <nav class="navbar navbar-expand-lg navbar-verde fixed-top opacity-75">
     <div class="container">
       <div>
         <a href="#" id="Inicio"> <img src="./img/logo.png" alt="sfestetica-logo" width="100" height="60"></a>
@@ -98,11 +106,11 @@
   </div>
 
   <!----------------------------------TRATAMIENTOS------------------------------------------------->
-  <section id="seccion-tratamientos">
+  <section id="tratamientos">
     <div class="container py-4 py-xl-5">
       <div class="row mb-3">
         <div class="col-md-8 col-xl-6 text-center mx-auto">
-          <h2 id="tratamientos">TRATAMIENTOS</h2>
+          <h2>TRATAMIENTOS</h2>
         </div>
       </div>
       <!------------------------- Tratamientos en Collapse ---------------------------------------->
@@ -273,21 +281,21 @@
         </div>
         <div class="row">
           <div class="col-sm-6 mb-2 verde rounded-2">
-            <form action="https://formsubmit.co/8ca0556beee57727287088b60d5218c0" method="POST">
+            <form id="form">
               <div class="row">
                 <div class="col position-relative">
-                  <label for="telefono">Nombre y Apellido:</label> 
-                  <input type="text" class="form-control" id="contactoNombre" name="contactoNombre">
+                  <label for="name">Nombre y Apellido:</label> 
+                  <input type="text" class="form-control" id="name" name="name" required>
     
-                  <label for="Email">Email:</label> 
-                  <input type="text" class="form-control" id="email" name="email"><br>
+                  <label for="email_id">Email:</label> 
+                  <input type="text" class="form-control" id="email_id" name="email_id" required><br>
               
                   <div class="col">
-                    <label for="mensaje">Mensaje:</label> 
-                    <textarea class="form-control" name="mensaje" rows="5" id="mensaje" placeholder="Escriba su mensaje..."></textarea><br>
+                    <label for="message">Mensaje:</label> 
+                    <textarea class="form-control" name="message" rows="5" id="message" required placeholder="Escriba su mensaje..."></textarea><br>
                   </div>
                   <div class="text-end m-1">
-                    <button class="btn btn-secondary"> Enviar </button>
+                    <input class="btn btn-secondary" type="submit" id="button" value="Enviar" >
                   </div>
                 </div>
               </div>
@@ -369,5 +377,6 @@
       </ul>
     </footer>
   </div>
+  <script src="./js/enviarEmail.js"></script>
 </body>
 </html>

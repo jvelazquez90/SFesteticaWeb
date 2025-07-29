@@ -2,18 +2,22 @@
     font-family: "Alkatra";
     src: url("../font/Alkatra-VariableFont_wght.ttf") format("truetype");
 }
-
+/*
 html {
     scroll-behavior: smooth;
-}
+}*/
 /*
 section[id] {
     scroll-margin-top: 90px !important;
 }
-    */
-
+*/
 body {
     background-color: #BDE9CE;
+    position: relative;
+}
+
+.margen-superior {
+    margin-top: 90px;
 }
 
 .navbar-verde {
